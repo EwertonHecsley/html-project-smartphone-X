@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smartphone X — Tecnologia que desaparece. Experiência que permanece. Um smartphone flagship ultra premium projetado para velocidade, precisão e elegância." />
+  <title>Smartphone X — Ultra Premium</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ Loading Screen ═══ -->
+  <div class="loader" id="loader">
+    <div class="nav-brand">Smartphone X</div>
+    <div class="loader-bar-track">
+      <div class="loader-bar" id="loaderBar"></div>
+    </div>
+    <div class="loader-text" id="loaderText">Carregando experiência…</div>
+  </div>
+
+  <!-- ═══ Navbar ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">Smartphone X</div>
+    <ul class="nav-links">
+      <li><a href="#overview" data-section="overview">Overview</a></li>
+      <li><a href="#tecnologia" data-section="tecnologia">Tecnologia</a></li>
+      <li><a href="#performance" data-section="performance">Performance</a></li>
+      <li><a href="#camera" data-section="camera">Câmera</a></li>
+      <li><a href="#specs" data-section="specs">Especificações</a></li>
+    </ul>
+    <a href="#comprar" class="nav-cta">Comprar</a>
+  </nav>
+
+  <!-- ═══ Scroll Indicator ═══ -->
+  <div class="scroll-indicator" id="scrollIndicator">
+    <div class="scroll-mouse"></div>
+    <span>Role para explorar</span>
+  </div>
+
+  <!-- ═══ Animation Section (scroll-driven) ═══ -->
+  <section class="animation-section" id="animationSection">
+
+    <!-- Sticky canvas -->
+    <div class="canvas-wrapper">
+      <canvas id="phoneCanvas"></canvas>
+    </div>
+
+    <!-- Storytelling overlay container -->
+    <div class="story-overlay">
+
+      <!-- 1 · HERO  (0–15%) -->
+      <div class="story-panel" id="panelHero" data-start="0" data-end="0.15">
+        <div class="story-content center">
+          <h1 class="headline-hero">Smartphone X</h1>
+          <p class="subheadline">Tecnologia que desaparece. Experiência que permanece.</p>
+          <p class="tagline">Desenvolvido para velocidade, precisão e elegância.</p>
+        </div>
+      </div>
+
+      <!-- 2 · ENGENHARIA  (15–40%) -->
+      <div class="story-panel" id="panelEngineering" data-start="0.18" data-end="0.38">
+        <div class="story-content left" id="overview">
+          <h2 class="headline">Precisão em<br>cada detalhe.</h2>
+          <p class="subcopy">Cada componente foi projetado para desempenho máximo.</p>
+          <p class="subcopy">Design interno otimizado para potência e eficiência.</p>
+        </div>
+      </div>
+
+      <!-- 3 · PERFORMANCE  (40–65%) -->
+      <div class="story-panel" id="panelPerformance" data-start="0.42" data-end="0.63">
+        <div class="story-content right" id="performance">
+          <h2 class="headline">Performance que<br>se adapta a você.</h2>
+          <ul class="feature-list">
+            <li><span class="dot"></span> Processamento em tempo real</li>
+            <li><span class="dot"></span> Resposta instantânea</li>
+            <li><span class="dot"></span> Eficiência energética avançada</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4 · CÂMERA  (65–85%) -->
+      <div class="story-panel" id="panelCamera" data-start="0.67" data-end="0.83">
+        <div class="story-content left" id="camera">
+          <h2 class="headline">Capture mais<br>do que imagens.</h2>
+          <p class="subcopy">Sistema de câmeras inteligente com processamento avançado.</p>
+          <p class="subcopy">Cada detalhe com mais nitidez, profundidade e cor.</p>
+        </div>
+      </div>
+
+      <!-- 5 · CTA  (85–100%) -->
+      <div class="story-panel" id="panelCTA" data-start="0.87" data-end="1.0">
+        <div class="story-content center" id="comprar">
+          <h2 class="headline">Tudo o que você precisa.<br>Nada além disso.</h2>
+          <p class="subheadline">Simples. Poderoso. Essencial.</p>
+          <div class="cta-group">
+            <a href="#specs" class="btn-primary">Explorar agora</a>
+            <a href="#specs" class="btn-secondary">Ver especificações</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ Specs Section ═══ -->
+  <section class="specs-section" id="specs">
+    <h2 class="specs-heading">Especificações</h2>
+    <div class="specs-grid">
+      <div class="spec-card">
+        <div class="spec-icon">📱</div>
+        <div class="spec-value">6.7"</div>
+        <div class="spec-label">Super Retina XDR OLED</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-icon">⚡</div>
+        <div class="spec-value">A18</div>
+        <div class="spec-label">Chip de última geração</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-icon">📷</div>
+        <div class="spec-value">48MP</div>
+        <div class="spec-label">Câmera com fusão quântica</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-icon">🔋</div>
+        <div class="spec-value">29h</div>
+        <div class="spec-label">Bateria o dia inteiro</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <p>&copy; 2026 Smartphone X. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
